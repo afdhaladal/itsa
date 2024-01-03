@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubah Status</title>
+</head>
+<body>
+
+<!-- Container untuk menampilkan status pengguna -->
+<div id="statusContainer">
+  <p>Status Pengguna: <span id="userStatus">Belum diproses</span></p>
+</div>
+
+<!-- Tombol untuk memproses status -->
+<button onclick="ubahStatus()">Proses</button>
+
+<script>
+  // Fungsi untuk mengubah status pengguna
+  function ubahStatus() {
+    // Simulasikan akses admin
+    var isAdmin = confirm('Apakah Anda admin?');
+
+    if (isAdmin) {
+      // Ubah status pengguna menjadi "proses"
+      document.getElementById('userStatus').innerText = 'Proses';
+    } else {
+      alert('Anda bukan admin. Anda tidak dapat mengubah status.');
+    }
+  }
+</script>
+
+</body>
+</html>
