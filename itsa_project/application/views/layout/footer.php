@@ -11,7 +11,7 @@
             <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
         </div>
         <div class="copyright">
-            &copy; Copyright <strong><span><a href="http://localhost/itsa_project_admin/"> ITSA 2023</a></span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span><a href="http://localhost/itsa_project_admin/Auth"> ITSA 2023</a></span></strong>. All Rights Reserved
         </div>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->

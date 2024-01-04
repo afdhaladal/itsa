@@ -23,6 +23,11 @@ class Proposal extends CI_Controller
             $this->load->view("layout/header", $data);
             $this->load->view("proposal/vw_proposal_admin", $data);
             $this->load->view("layout/footer", $data);
+        } elseif ($data['user']['role'] == 'Sekre2') {
+            $data['proposal'] = $this->Proposal_model->get(); // Gantilah ini dengan data sesuai kebutuhan Admin
+            $this->load->view("layout/header", $data);
+            $this->load->view("proposal/vw_proposal_admin", $data);
+            $this->load->view("layout/footer", $data);
         } else {
             // Role tidak dikenali, atur tindakan yang sesuai
         }

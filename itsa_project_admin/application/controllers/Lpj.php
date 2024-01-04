@@ -23,6 +23,11 @@ class Lpj extends CI_Controller
             $this->load->view("layout/header", $data);
             $this->load->view("lpj/vw_lpj_admin", $data);
             $this->load->view("layout/footer", $data);
+        } elseif ($data['user']['role'] == 'Sekre1') {
+            $data['lpj'] = $this->Lpj_model->get(); // Gantilah ini dengan data sesuai kebutuhan Admin
+            $this->load->view("layout/header", $data);
+            $this->load->view("lpj/vw_lpj_admin", $data);
+            $this->load->view("layout/footer", $data);
         } else {
             // Role tidak dikenali, atur tindakan yang sesuai
         }
